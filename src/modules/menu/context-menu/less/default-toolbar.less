@@ -1,0 +1,24 @@
+context-toolbar {
+  flex: 1;
+  column-gap: 5px;
+
+  // targeting elements that end with button name
+  .ctx-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 3px;
+
+    &:hover {
+      background-color: var(--hover-buttons);
+    }
+
+    &:active {
+      opacity: var(--active-opacity);
+    }
+
+    &.selected {
+      background: var(--hover-buttons);
+    }
+  }
+}
